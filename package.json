@@ -1,0 +1,35 @@
+{
+  "name": "cloudflare-worker-lambda-gateway",
+  "version": "1.0.0",
+  "description": "Example for call lambda function via cloudflare worker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -g aliasify -t envify index.js -o dist/worker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysugimoto/cloudflare-worker-lambda-gateway.git"
+  },
+  "keywords": [
+    "cloudflare"
+  ],
+  "author": "Yoshiaki Sugimoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ysugimoto/cloudflare-worker-lambda-gateway/issues"
+  },
+  "homepage": "https://github.com/ysugimoto/cloudflare-worker-lambda-gateway#readme",
+  "dependencies": {
+    "aliasify": "^2.1.0",
+    "aws4": "^1.6.0",
+    "browserify": "^16.1.1",
+    "envify": "^4.1.0",
+    "querystring-browser": "^1.0.4"
+  },
+  "aliasify": {
+    "aliases": {
+      "querystring": "querystring-browser"
+    }
+  }
+}
