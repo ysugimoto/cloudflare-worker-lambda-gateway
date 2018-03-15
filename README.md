@@ -32,10 +32,5 @@ npm run build
 ```
 
 You can find a built file at `dist/worker.js`. copy script and paste to [Cloudflare worker playground](https://cloudflareworkers.com/)
-After update worker, you can get Lambda function response at URL of "https://tutorial.cloudflareworkers.com/[function name]"
-
-Enjoy!
-
-
-
+After update worker, you can get Lambda function response at URL of "https://tutorial.cloudflareworkers.com/[function-name]".
 
