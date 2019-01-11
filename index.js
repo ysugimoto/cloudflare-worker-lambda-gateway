@@ -26,7 +26,7 @@ function lambdaProxy(request) {
     body: '{}'
   }, credentials);
 
-  return fetch(`https://${req.hostname}/${req.path}`, {
+  return fetch(`https://${req.hostname}${req.path}`, {
     method: req.method,
     headers: req.headers,
     body: req.body
